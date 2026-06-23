@@ -1,8 +1,8 @@
-/* CSS fuer meine FC Barcelona Webseite */
+/* CSS für meine FC Barcelona Webseite */
 /* Modul 293 - Ledion Jusufi */
 
 
-/* allgemeine Sachen fuer die ganze Seite */
+/* allgemeine Sachen für die ganze Seite */
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@ header p {
 }
 
 
-/* Menue / Navigation */
+/* Menü / Navigation */
 nav {
     background-color: #A50044;
 }
@@ -63,7 +63,7 @@ nav a {
     border-right: 1px solid #800033;
 }
 
-/* wenn man mit der Maus drueber geht */
+/* wenn man mit der Maus drüber geht */
 nav a:hover {
     background-color: #800033;
     color: #EDBB00;
@@ -203,7 +203,7 @@ tr:nth-child(even) {
 }
 
 
-/* die Kaestchen mit den Titeln auf der Titel-Seite */
+/* die Kästchen mit den Titeln auf der Titel-Seite */
 .titel-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -253,7 +253,7 @@ footer {
         font-size: 24px;
     }
 
-    /* Menue wird untereinander statt nebeneinander */
+    /* Menü wird untereinander statt nebeneinander */
     nav ul {
         flex-direction: column;
     }
@@ -263,7 +263,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    /* nur noch 2 Titel-Kaestchen nebeneinander */
+    /* nur noch 2 Titel-Kästchen nebeneinander */
     .titel-grid {
         grid-template-columns: 1fr 1fr;
     }
