@@ -1,8 +1,5 @@
 /* CSS für meine FC Barcelona Webseite */
-/* Modul 293 - Ledion Jusufi */
 
-
-/* allgemeine Sachen für die ganze Seite */
 * {
     margin: 0;
     padding: 0;
@@ -69,14 +66,14 @@ nav a:hover {
     color: #EDBB00;
 }
 
-/* die Seite auf der man gerade ist wird markiert */
+
 nav a.aktiv {
     background-color: #800033;
     color: #EDBB00;
 }
 
 
-/* der mittlere Teil: links der Text, rechts die Infos */
+
 .container {
     max-width: 1100px;
     margin: 20px auto;
@@ -118,7 +115,7 @@ main img {
     border: 3px solid #004D98;
 }
 
-/* kleiner Text unter dem Bild (Bildquelle) */
+
 .bildquelle {
     text-align: center;
     font-size: 12px;
@@ -128,7 +125,7 @@ main img {
 }
 
 
-/* Infobereich auf der rechten Seite */
+
 aside {
     background-color: white;
     padding: 20px;
@@ -156,7 +153,7 @@ aside strong {
 }
 
 
-/* Tabellen (Titel-Seite und Top Scorer) */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -176,13 +173,13 @@ td {
     border-bottom: 1px solid #dddddd;
 }
 
-/* jede zweite Zeile etwas grauer damit man es besser lesen kann */
+
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
 
-/* die Willkommens-Box auf der Startseite */
+
 .hero {
     background-color: #004D98;
     color: white;
@@ -203,7 +200,7 @@ tr:nth-child(even) {
 }
 
 
-/* die Kästchen mit den Titeln auf der Titel-Seite */
+
 .titel-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -231,7 +228,7 @@ tr:nth-child(even) {
 }
 
 
-/* Fussbereich ganz unten */
+
 footer {
     background-color: #222222;
     color: #cccccc;
@@ -247,23 +244,23 @@ footer {
 }
 
 
-/* Damit die Seite auch auf dem Handy gut aussieht */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 24px;
     }
 
-    /* Menü wird untereinander statt nebeneinander */
+    
     nav ul {
         flex-direction: column;
     }
 
-    /* Text und Infobereich untereinander statt nebeneinander */
+   
     .container {
         grid-template-columns: 1fr;
     }
 
-    /* nur noch 2 Titel-Kästchen nebeneinander */
+    
     .titel-grid {
         grid-template-columns: 1fr 1fr;
     }
