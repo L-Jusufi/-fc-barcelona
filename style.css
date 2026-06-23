@@ -1,0 +1,274 @@
+/* CSS fuer meine FC Barcelona Webseite */
+/* Modul 293 - Ledion Jusufi */
+
+
+/* allgemeine Sachen fuer die ganze Seite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222222;
+    line-height: 1.6;
+}
+
+
+/* Kopfbereich oben (Header) */
+header {
+    background-color: #004D98;
+    color: white;
+    padding: 20px;
+    border-bottom: 5px solid #A50044;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #EDBB00;
+    font-size: 14px;
+}
+
+
+/* Menue / Navigation */
+nav {
+    background-color: #A50044;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px 10px;
+    border-right: 1px solid #800033;
+}
+
+/* wenn man mit der Maus drueber geht */
+nav a:hover {
+    background-color: #800033;
+    color: #EDBB00;
+}
+
+/* die Seite auf der man gerade ist wird markiert */
+nav a.aktiv {
+    background-color: #800033;
+    color: #EDBB00;
+}
+
+
+/* der mittlere Teil: links der Text, rechts die Infos */
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+main {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #dddddd;
+}
+
+main h2 {
+    color: #004D98;
+    border-bottom: 2px solid #EDBB00;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+main h3 {
+    color: #A50044;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+main p {
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border: 3px solid #004D98;
+}
+
+/* kleiner Text unter dem Bild (Bildquelle) */
+.bildquelle {
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+
+/* Infobereich auf der rechten Seite */
+aside {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-top: 5px solid #EDBB00;
+}
+
+aside h3 {
+    color: #004D98;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    padding: 6px 0;
+    border-bottom: 1px dashed #cccccc;
+    font-size: 14px;
+}
+
+aside strong {
+    color: #A50044;
+}
+
+
+/* Tabellen (Titel-Seite und Top Scorer) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+th {
+    background-color: #004D98;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* jede zweite Zeile etwas grauer damit man es besser lesen kann */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+/* die Willkommens-Box auf der Startseite */
+.hero {
+    background-color: #004D98;
+    color: white;
+    text-align: center;
+    padding: 40px 25px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    color: #EDBB00;
+    border: none;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    text-align: center;
+}
+
+
+/* die Kaestchen mit den Titeln auf der Titel-Seite */
+.titel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.titel-box {
+    background-color: #004D98;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 4px solid #EDBB00;
+}
+
+.titel-box .anzahl {
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    color: #EDBB00;
+}
+
+.titel-box .name {
+    font-size: 13px;
+}
+
+
+/* Fussbereich ganz unten */
+footer {
+    background-color: #222222;
+    color: #cccccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+.autor {
+    color: #EDBB00;
+    font-weight: bold;
+}
+
+
+/* Damit die Seite auch auf dem Handy gut aussieht */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    /* Menue wird untereinander statt nebeneinander */
+    nav ul {
+        flex-direction: column;
+    }
+
+    /* Text und Infobereich untereinander statt nebeneinander */
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    /* nur noch 2 Titel-Kaestchen nebeneinander */
+    .titel-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+}
